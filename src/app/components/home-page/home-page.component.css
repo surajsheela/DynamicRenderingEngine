@@ -1,0 +1,47 @@
+
+
+.welcomeheader	{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 0;
+	height: 350px;
+	display: block;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.welcome-text{
+	font-size: 35px;
+    font-weight: 550;
+    width: 100%;
+    font-family: SFProDisplay-Semibold;
+}
+
+.tittle {
+	color: #323232;
+	font-size: 37px;
+	font-weight: 900;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.hero{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+
+.home-page-links {
+	text-align: center;
+    display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-top: 30px;
+	margin-right: auto;
+	font-family: SFProDisplay-Regular;
+	
+}

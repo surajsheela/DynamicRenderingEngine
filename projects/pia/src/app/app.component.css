@@ -1,0 +1,141 @@
+.title {
+    margin-top: 10px;
+  }
+  
+  /* .app {
+    background: #fff;
+    padding: 20px 30px;
+    width: 1080px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  } */
+
+
+  .form-group{
+    display:flex;
+    align-items:center;
+  }
+  .form-control{
+    width:100px;
+    height:40px;
+    font-size: 14px;
+    font-weight : 600;
+  }
+  .button-class{
+    cursor: pointer;
+    border: 0;
+    color: blue;
+    text-decoration : underline;
+  }
+  .apple-image{
+    height: 292px;
+    width: 511px;
+    margin-left: 367px;
+    background-image: url('../assets/images/hero_image.png');
+    margin-top: 54px;
+  } 
+  .progress_bar{
+  margin-left : 350px;
+  background: url('../assets/images/progressbar_empty.png') no-repeat top left;
+  display: block;
+  height: 12px;
+  float: left;
+  margin-top: -39px;
+  position: relative;
+  width: 600px;
+  }
+  img.mask {
+  width: 600px;
+  height: 2px;
+  }
+  progress_bar img.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  }
+  .progress_bar .progress {
+  background-image: url('../assets/images/progressbar_full.png');
+  background-repeat: no-repeat;
+  background-position: -709px 0;
+  display: block;
+  height: 12px;
+  overflow: hidden;
+  position: relative;
+  width: 600px;
+  }
+  .progress_bar img.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  }
+  ul.steps{
+    position: relative;
+  margin-top: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  width: 823px;
+  }
+  ul.horizontal {
+    top: -18px;
+    float: left;
+    width: 100%;
+    zoom: 1;
+    margin: 0;
+  }
+  button{
+    margin-left:0px;
+  }
+  ul{
+    list-style: none outside;
+  }
+  ul.steps li.step_account {
+  left: 340px;
+  }
+  ul.steps li {
+    font-size:13px;
+  position: absolute;
+  width: 140px;
+  top: -2px;
+  }
+  ul li {
+  padding-bottom: 5px;
+  margin-left: 1em;
+  }
+  ul.steps li.step_rate {
+  left: 516px;
+  }
+  ul.steps li.step_review {
+  left: 700px;
+  }
+  ul.steps li.step_store {
+  left: 555px;
+  }
+  ul.steps li.step_flow {
+  left: 903px;
+  }
+  button{
+    margin-top : 20px;
+    display:flex;
+  }
+  select{
+    display:flex;
+    margin-top:10px;
+  }
+  .selection{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: auto;
+    margin-bottom:20px;
+  }
+  .btn-success{
+    margin-left: 200px;
+  }
+  .form-row{
+    margin-top: 15px;
+    margin-left: 400px;
+  }
+ 

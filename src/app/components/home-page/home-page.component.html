@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-sm tittle">
+      <h4 [innerHTML]="appTittle" class="welcome-text"></h4>
+    </div>
+    <div class="col-sm-12 welcomeImage">
+      <img class="img-responsive hero" src="{{heroImage}}" width="700" height="200">
+    </div>
+    <div class="col-sm-12 home-page-links">
+      <br> <a id = "USA"  (click)="onClick($event)" ><b>USA</b> Apple Direct Customer Agreement</a> <br> <br>
+      <a id = "CAN"  (click)="onClick($event)" ><b>Canada</b> Apple Direct Customer Agreement</a> <br> <br>
+    </div>
+  </div>
+</div>

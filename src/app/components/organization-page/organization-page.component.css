@@ -1,0 +1,39 @@
+button{
+    margin-top : 20px;
+    display:flex;
+}
+.progress_bar .progress.step1 {
+    background-position: -740px 0;
+}
+.progress_bar .progress {
+    background-image: url(../../../assets/images/progressbar_full.png);
+    background-repeat: no-repeat;
+    background-position: -635px 0;
+    display: block;
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+    width: 820px;
+}
+select{
+    display:flex;
+    margin-top:10px;
+}
+
+.selection{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: auto;
+    margin-bottom:20px;
+}
+
+.btn-success{
+  margin-left: 50%;
+}
+
+.form-row{
+    margin-top: 15px;
+    margin-left: 400px;
+}

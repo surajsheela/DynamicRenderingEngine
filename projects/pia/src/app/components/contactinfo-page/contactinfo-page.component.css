@@ -1,0 +1,27 @@
+button{
+    margin-top : 20px;
+    display:flex;
+}
+
+select{
+    display:flex;
+    margin-top:10px;
+}
+
+.selection{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: auto;
+    margin-bottom:20px;
+}
+
+.btn-success{
+  margin-left: 200px;
+}
+
+.form-row{
+    margin-top: 15px;
+    margin-left: 400px;
+}

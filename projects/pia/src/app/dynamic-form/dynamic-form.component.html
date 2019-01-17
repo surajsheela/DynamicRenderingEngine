@@ -1,0 +1,81 @@
+<div [formGroup]="form" [ngSwitch]="input.type" class="container" *ngIf="!hidden">
+
+  <!-- CHECKBOX -->
+  <div class="col-sm-12" *ngSwitchCase="'checkbox'">
+    <input class="form-check-input" type="checkbox" [formControlName]="input.key" [id]="input.key" [name]="input.name">
+    <label class="control-label" [attr.for]="input.key">{{input.label}}</label>
+  </div>
+
+  <!-- TEXTBOX -->
+  <div class="col-sm-12" *ngSwitchCase="'input'">
+    <label class="control-label col-sm-4" [attr.for]="input.key">{{input.label}}</label>
+    <div class="col-sm-6">
+      <input class="form-control input-sm" type="text" [formControlName]="input.key" [id]="input.key" [name]="input.name">
+    </div>
+  </div>
+
+  <!-- TEXTAREA -->
+  <div class="col-sm-12" *ngSwitchCase="'textarea'">
+    <label class="control-label col-sm-4" [innerHTML]="input.label" [attr.for]="input.key"></label>
+    <div class="col-sm-6">
+      <textarea [ngClass]="input.layout.class" [formControlName]="input.key" [id]="input.key">
+      </textarea>
+    </div>
+  </div>
+
+<!-- SWITCH -->
+<div class="forward-permanant col-sm-12" *ngSwitchCase="'switch'">
+    <label for="toggle" class="">{{input.label}}</label>
+    <div class="material-toggle">
+        <input type="checkbox" [formControlName]="input.key" [id]="input.key" [name]="input.name" checked=false class="form-check-input switch" />
+        <label for="toggle" class="control-label"></label>
+      </div>
+</div>
+
+  <!-- BUTTON-->
+  <div class="col-sm-12" *ngSwitchCase="'button'">
+      <button type="button" (click)="onClick($event)" [ngClass]="input.layout.class" class="btn btn-success" [disabled]="!form.valid" [id]="input.key"  >
+        {{ input.label }}
+      </button>
+  </div>
+
+  <!-- radio -->
+  <div class="col-sm-12" *ngSwitchCase="'radio'">
+    <label class="control-label col-sm-4" [attr.for]="input.key">{{input.label}}</label>
+    <span class="col-sm-2" *ngFor="let opt of input.options">
+      <input class="radio" type="radio" [id]="opt.key" [name]="input.key" [value]="opt.value">
+      {{opt.value}}
+    </span>
+  </div>
+
+  <!-- paragraph -->
+  <div class="col-sm-12" *ngSwitchCase="'paragraph'">
+    <p [ngClass]="input.layout.class" [innerHTML]="input.label" [attr.for]="input.key">{{input.label}}</p>
+  </div>
+
+  <!-- label -->
+  <div class="col-sm-12" *ngSwitchCase="'label'">
+    <label [ngClass]="input.layout.class" [id]="input.key" [innerHTML]="input.label" [attr.for]="input.key" ></label>
+  </div>
+
+  <!-- DROPDOWN -->
+  <div class="col-sm-12" *ngSwitchCase="'select'">
+    <label class="control-label col-sm-4" [attr.for]="input.key">{{input.label}}</label>
+    <div class="col-sm-6">
+      <select [id]="input.key" class="form-control" [formControlName]="input.key">
+        <option>Select Type</option>
+        <option *ngFor="let opt of input.options" [value]="opt.key">{{opt.value}}</option>
+      </select>
+    </div>
+  </div>
+  <!-- UPLOAD -->
+  <div class="col-sm-12" *ngSwitchCase="'upload'">
+    <div class="col-sm-6">
+        <label class="myLabel">
+        <input type="file" [formControlName]="input.key" />
+        <span>{{input.label}}</span>
+        </label>
+    </div>
+  </div>
+
+</div>

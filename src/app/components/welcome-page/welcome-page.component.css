@@ -1,0 +1,62 @@
+.btn{
+	margin-left: 50%;
+}
+.sosumi{
+	margin: 0px auto 18px;
+    padding: 0px 20px;
+	width: 1146px;
+	font-size: 10px !important;
+    line-height: 1.5;
+	color: #888;
+	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+.app-title	{
+	text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    font-weight: 550;
+    width: 100%;
+    font-family: SFProDisplay-Semibold;
+}
+
+.leftcontent {
+	color: #323232;
+	font-size: 37px;
+	font-weight: 900;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+
+.hero{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 50px;
+}
+
+.welcomeText{
+	font-size: 35px;
+	font-weight: 550;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: SFProDisplay-Semibold;
+}
+
+.select-region{
+	display: flex;
+    flex-direction: column;
+}
+
+.verify-section{
+	left: 25%;
+	margin-top: 4%;
+}
+
+

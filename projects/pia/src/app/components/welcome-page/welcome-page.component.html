@@ -1,0 +1,21 @@
+<div class="contanier organization">
+    <div class="main">
+        <div class="main_wrap">
+            <div class="content">
+                <form [formGroup]="welcomeform" (ngSubmit)="onSubmit(welcomeform.value)">
+                        <section *ngFor="let section of sections" class="section-group" >
+                                <div *ngFor="let control of section.fields" class="form-group">
+                                  <dynamic-control [input]="control" [form]="welcomeform">
+                                  </dynamic-control>
+                                </div>
+                        </section>
+            <!-- <div class="">
+                <button  class="btn btn-success" (click)="onAgree()" [disabled]="!form.valid">I agree</button>
+            </div> -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class='sosumi'><p>Apple reserves the right to reject any submission without comment. Please do not continue if you are unable to meet all of the requirements or cannot provide all of the information requested.</p><p>Application will be rejected If the acceptance of the agreement has an incorrect legal name or the inappropriate signing authority.</p><p>The web site functions best with Safari. When using another web browser, ensure the latest version is installed and, if applicable, any required PDF plug-ins are installed.</p></div>
+    <app-footer></app-footer>
+</div>

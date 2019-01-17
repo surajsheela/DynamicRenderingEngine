@@ -1,0 +1,242 @@
+
+
+.col-sm-2{
+    display: flex;
+}
+
+.app-title	{
+	text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    font-weight: 550;
+    width: 100%;
+    font-family: SFProDisplay-Semibold;
+}
+  
+.thankyou-message{
+	text-align: center;
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: SFProDisplay-Regular;
+}
+
+
+.leftcontent {
+	color: #323232;
+	font-size: 37px;
+	font-weight: 900;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+
+.hero{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 50px;
+}
+
+.welcomeText{
+	font-size: 35px;
+	font-weight: 550;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: SFProDisplay-Semibold;
+}   
+.container .middlesection{
+  font-size: 14px;
+  line-height: 21px;
+  zoom: 1;
+  background-color: #fafafa;
+  padding: 30px;
+  margin-top: 30px;
+}
+.progress_bar img.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+section{
+    border-bottom: 1px solid #BBBBBB;
+    margin: 10px;
+}
+.progress_bar .progress.empty {
+	background-position: -1000px 0;
+}
+
+.progress_bar .progress.step1 {
+	background-position: -740px 0;
+}
+
+.progress_bar .progress.step2 {
+	background-position: -659px 0;
+}
+
+.progress_bar .progress.step3 {
+	background-position: -457px 0;
+}
+
+.progress_bar .progress.step4 {
+	background-position: -267px 0;
+}
+
+.progress_bar .progress.step5 {
+	background-position: -327px 0;
+}
+
+.progress_bar .progress.step6 {
+	background-position: -163px 0;
+}
+
+#main_bottom {
+background:url("./assets/images/content_bottom.gif") no-repeat;
+width:984px;
+height:10px;
+font-size:1px;
+}
+.progress_bar .progress {
+    background-image: url("./assets/images/progressbar_full.png");
+    background-repeat: no-repeat;
+    background-position: -635px 0;
+    display: block;
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+    width: 820px;
+}
+.progress_bar .progress.step7 {
+	background-position: 0 0;
+}
+
+.progress_bar .progress.done {
+	background-position: 0 0;
+}
+
+ul.steps {
+	position: relative;
+	margin-top: 37px;
+	font-size: 11px;
+	font-weight: 700;
+	margin-bottom: 20px;
+    width: 823px;
+    margin-left: 42px;
+}
+
+ul.steps li {
+	position: absolute;
+	width: 145px;
+	top: -2px;
+}
+
+ul.steps li.step_organizationtype {
+	left: -1px;
+}
+
+ul.steps li.step_organizationinfo {
+	left: 75px;
+	width: 500px;
+}
+
+ul.steps li.step_contactinfo {
+	left: 275px;
+}
+
+/* ul.steps li.step_addcomments{
+	left:430px;
+} */
+ul.steps li.step_agreement {
+	left: 458px;
+}
+
+ul.steps li.step_agreementconfirm {
+	left: 630px;
+}
+
+ul.steps li.step_thankyou {
+	left: 790px;
+}
+.formHelpText{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-family: SFProDisplay-Regular;
+}
+.progress_bar {
+    background: url("./assets/images/progressbar_empty.png") no-repeat top left;
+    display: block;
+    height: 12px;
+    float: left;
+    margin-top: 27px;
+    margin-left: 9%;
+    margin-bottom: 21px;
+    position: relative;
+    width: 820px;
+}
+.progress_bar img.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+label.control-label.main-heading {
+    color: #000;
+    font-size: 21px;
+    font-weight: 400;
+    padding-bottom: 11px;
+    margin-bottom: 0px;
+}
+
+label.control-label.col-sm-4 {
+    text-align: right;
+}
+
+label.myLabel input[type="file"] {
+    position:absolute;
+    top: -1000px;
+}
+.btn-success{
+    width: 90px !important;
+    margin-left: 50%;
+}
+/***** Example custom styling *****/
+.myLabel {
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 2px;
+    background: #5cb85c;
+    border-color: #5cb85c;
+    display: inline-block;
+}
+.myLabel:hover {
+    background: #5cb85c;
+}
+.myLabel:active {
+    background: #5cb85c;
+}
+.myLabel :invalid + span {
+    color: #A44;
+}
+.myLabel :valid + span {
+    color: #fff;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+}

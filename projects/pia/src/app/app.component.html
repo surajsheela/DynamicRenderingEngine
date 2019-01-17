@@ -1,0 +1,64 @@
+<!-- <div class="container" *ngIf="isOn">
+  <div class="selection">
+    <h1>Authorized Apple Reseller Application</h1>
+    <img src="../assets/images/hero_image.png">
+    <div class="form-group">
+      <label>Select a Region : </label>
+      <select class="form-control" [(ngModel)]="selectedOption" style="margin-top:0px;">
+        <option [value]="usa">USA</option>
+        <option [value]="canada">Canada</option>
+        <option [value]="alac">ALAC</option>
+      </select>
+    </div>
+    <button class="button-class" href="" (click)="goToContainer(USA,'serviceprovider')">Authorized Apple Service
+      Provider Application </button>
+    <button class="button-class" href="" (click)="goToContainer(USA,'reseller')">Authorized Apple Reseller Application
+    </button>
+    <button class="button-class" href="" (click)="goToContainer(USA,'selfservice')">Self-Servicing Account Application</button>
+  </div>
+</div>
+
+
+<div class="container" *ngIf="!isOn">
+  <div class="progress_bar">
+    <img width="600" height="12" class="mask" src="../assets/images/progressbar_mask.png" alt="Progress">
+    <span class="progress step1"></span>
+  </div>
+  <ul class="horizontal steps">
+    <li class="step_account">Business Information</li>
+    <li class="step_rate">Locations & Contacts</li>
+    <li class="step_review">Document Uploads</li>
+    <li class="step_flow">Confirmation</li>
+  </ul>
+  <div class="apple-image"></div>
+  <div class="app">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+      <div *ngFor="let control of controls" class="form-row">
+        <dynamic-control [input]="control" [form]="form">
+        </dynamic-control>
+      </div>
+      <div class="form-row">
+        <button type="submit" class="btn btn-success" [disabled]="!form.valid">Save</button>
+      </div>
+    </form>
+  </div>
+  <pre>{{form.value | json }}
+  </pre>
+  <div *ngIf="payLoad" class="form-row">
+    <strong>Saved the following values</strong>
+    <br>{{payLoad}}
+  </div>
+  <p>Submitted data:
+  </p>
+  <pre>{{ submittedData | json }}
+  </pre>
+</div> -->
+
+
+
+
+<div class="app">
+   <router-outlet></router-outlet> 
+  <!-- <div *ngFor="let page of pages">
+  <app-welcome-page [page]=page></app-welcome-page></div> -->
+ </div>

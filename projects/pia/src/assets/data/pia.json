@@ -1,0 +1,571 @@
+{
+  "appCode": "PIA",
+  "appName": "Privacy Impact Assessment",
+  "pages": [
+    {
+      "pageId": 1,
+      "pageName": "page1",
+      "navigation":{
+        "nextLink" :"page2",
+        "previousLink" :""
+      },
+      "layout": {
+        "colspan": 20,
+        "rowspan": 20,
+        "class": "container"
+      },
+      "sections": [
+        {
+          "name": "section1",
+          "key": "1",
+          "order": "1",
+          "readonly": false,
+          "type": "division",
+          "fields": [
+            {
+              "name": "title",
+              "key": "appTitle",
+              "label": "Privacy Impact Assessment",
+              "readonly": false,
+              "type": "paragraph",
+              "order": "1",
+              "validations": [],
+              "layout": {
+                "class": "app-title"
+              },
+              "dependency": []
+            },
+            {
+                "name": "newreview",
+                "key": "newreview",
+                "type": "button",
+                "label" : "New Review",
+                "validations": [],
+                "layout": {
+                  "class": "control-label-big"
+                },
+                "route":"nextpage1",
+                "action" : "nextPage1()",
+                "dependency": []
+            },
+            {
+              "name": "sectionsassessment",
+              "key": "sectionsassessment",
+              "label": "Assessment Sections",
+              "readonly": false,
+              "type": "paragraph",
+              "order": "2",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "sectionsassessment-message"
+              },
+              "dependency": []
+            },
+            {
+                "name": "projoverview",
+                "key": "projoverview",
+                "label": "% Project Overview &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; % Guideline Detail",
+                "readonly": false,
+                "type": "paragraph",
+                "order": "2",
+                "validations": [],
+                "layout": {
+                  "colspan": 20,
+                  "rowspan": 20,
+                  "class": "projoverview-message"
+                },
+                "dependency": []
+            },
+            {
+                "name": "privacyreview",
+                "key": "privacyreview",
+                "label": "% Privacy Review &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; % Privacy by design & default",
+                "readonly": false,
+                "type": "paragraph",
+                "order": "2",
+                "validations": [],
+                "layout": {
+                  "colspan": 20,
+                  "rowspan": 20,
+                  "class": "privacyreview-message"
+                },
+                "dependency": []
+            },
+            {
+                "name": "piiinfo",
+                "key": "piiinfo",
+                "label": "% PII Information Review &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; % Risk Review",
+                "readonly": false,
+                "type": "paragraph",
+                "order": "2",
+                "validations": [],
+                "layout": {
+                  "colspan": 20,
+                  "rowspan": 20,
+                  "class": "piiinfo-message"
+                },
+                "dependency": []
+            },
+            {
+              "name": "draft",
+              "key": "draft",
+              "type": "button",
+              "label" : "Draft",
+              "validations": [],
+              "layout": {
+                "class": "control-label-orange"
+              },
+              "route":"draft",
+              "action" : "draft()",
+              "dependency": []
+          },
+          {
+            "name": "submitreview",
+            "key": "submitreview",
+            "type": "button",
+            "label" : "Submit",
+            "validations": [],
+            "layout": {
+              "class": "control-label-green"
+            },
+            "route":"submitreview",
+            "action" : "submitreview()",
+            "dependency": []
+        },
+            {
+              "name": "projinfo",
+              "key": "projinfo",
+              "label": "<b>project Information</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>Section Complete</b><img src='../../../assets/images/checked-image.png'>",
+              "readonly": false,
+              "type": "paragraph",
+              "order": "1",
+              "validations": [],
+              "layout": {
+                "class": "projinfo-heading"
+              },
+              "dependency": []
+            },
+            {
+                "name": "projoverview",
+                "key": "projoverview",
+                "label": "Project Overview",
+                "value": "",
+                "readonly": false,
+                "type": "textarea",
+                "order": "3",
+                "validations": [],
+                "layout": {
+                  "colspan": 20,
+                  "rowspan": 20,
+                  "class": "form-control"
+                }
+              },
+              {
+                "name": "softistproj",
+                "label": "Software or IST Project:",
+                "value": "",
+                "required" : false,
+                "key": "softistproj",
+                "readonly": false,
+                "type": "select",
+                "options": [{ "key": "software", "value": "Software" }],
+                "order": "1",
+                "validations": [],
+                "layout": {
+                  "colspan": 20,
+                  "rowspan": 20,
+                  "class": "input-field"
+                }
+              },
+              {
+                "name": "urgent",
+                "key": "urgent",
+                "label": "Urgent",
+                "value": "",
+                "readonly": false,
+                "type": "switch",
+                "order": "3",
+                "defaultValue": "No",
+                "validations": [],
+                "layout": {
+                  "colspan": 20,
+                  "rowspan": 20,
+                  "class": "input-field"
+                },
+                "dependency": []
+              },
+              {
+                "name": "confidential",
+                "key": "confidential",
+                "label": "Confidential",
+                "value": "",
+                "readonly": false,
+                "type": "switch",
+                "order": "3",
+                "defaultValue": "No",
+                "validations": [],
+                "layout": {
+                  "colspan": 20,
+                  "rowspan": 20,
+                  "class": "input-field"
+                },
+                "dependency": []
+              },
+              {
+                "name": "accesslist",
+                "key": "accesslist",
+                "label": "<div class='USContent'>Access List<ul><li>--------</li><li>----------------</li><li>----------------</li><li>----------------</li><li>--------</li><li>--------</li></ul></div>",
+                "readonly": false,
+                "type": "paragraph",
+                "order": "1",
+                "validations": [],
+                "layout": {
+                  "class": "accesslist"
+                },
+                "dependency": []
+              },
+              {
+                "name": "businessgroup",
+                "key": "businessgroup",
+                "label": "Business Group:",
+                "value": "",
+                "readonly": false,
+                "type": "input",
+                "options": [],
+                "order": "2",
+                "defaultVisible": false,
+                "defaultValue": "",
+                "validations": [],
+                "layout": {
+                  "colspan": 20,
+                  "rowspan": 20,
+                  "class": "col-sm-6"
+                }
+              },
+              {
+                "name": "applicationname",
+                "key": "applicationname",
+                "label": "Application Name:",
+                "value": "",
+                "readonly": false,
+                "type": "input",
+                "options": [],
+                "order": "2",
+                "defaultVisible": false,
+                "defaultValue": "",
+                "validations": [],
+                "layout": {
+                  "colspan": 20,
+                  "rowspan": 20,
+                  "class": "col-sm-6"
+                }
+              },
+              {
+                "name": "respparty",
+                "key": "respparty",
+                "label": "Responsible Party:",
+                "value": "",
+                "readonly": false,
+                "type": "input",
+                "options": [],
+                "order": "2",
+                "defaultVisible": false,
+                "defaultValue": "",
+                "validations": [],
+                "layout": {
+                  "colspan": 20,
+                  "rowspan": 20,
+                  "class": "col-sm-6"
+                }
+              }            
+          ]
+        }]
+    },
+    {
+      "pageId": 2,
+      "pageName": "organizationInfo",
+      "layout": {
+        "colspan": 20,
+        "rowspan": 20,
+        "class": "container"
+      },
+      "navigation":{
+        "nextLink" :"organizationType",
+        "previousLink" :"welcome"
+      },
+      "sections": [
+        {
+          "name": "section1",
+          "key": "1",
+          "order": "1",
+          "readonly": false,
+          "type": "division",
+          "fields": [
+            {
+              "name": "vulnerablepersons",
+              "key": "vulnerablepersons",
+              "label": "Is there processing vulnerable persons data, such as chhildren or students?",
+              "value": "",
+              "options": [{ "key": "yes", "value": "YES" },
+              { "key": "no", "value": "NO" }],
+              "readonly": false,
+              "type": "radio",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "input-field"
+              },
+              "dependency": []
+            },
+            {
+              "name": "geneticdata",
+              "key": "geneticdata",
+              "label": "Is there collection of health or genetic data?",
+              "value": "",
+              "options": [{ "key": "yes", "value": "YES" },
+              { "key": "no", "value": "NO" }],
+              "readonly": false,
+              "type": "radio",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "input-field"
+              },
+              "dependency": []
+            },
+            {
+              "name": "sensitivedata",
+              "key": "sensitivedata",
+              "label": "Is there processing for large amounts of data affecting large number of individuals, large amounts of sensitive data? Eg: circa 100,000",
+              "value": "",
+              "options": [{ "key": "yes", "value": "YES" },
+              { "key": "no", "value": "NO" }],
+              "readonly": false,
+              "type": "radio",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "input-field"
+              },
+              "dependency": []
+            },
+            {
+              "name": "newkind",
+              "key": "newkind",
+              "label": "Is the process engaging in a 'new kind' of processing or where time has elapsed since an initil PIA, or usinf exiting data for a new and unexpected or more intrusive purpose?",
+              "value": "",
+              "options": [{ "key": "yes", "value": "YES" },
+              { "key": "no", "value": "NO" }],
+              "readonly": false,
+              "type": "radio",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "input-field"
+              },
+              "dependency": []
+            },
+            {
+              "name": "userprofile",
+              "key": "userprofile",
+              "label": "Does the intended use of the daya involve creating a profile of a user and or employee in order to make a decision in relation to them and or to offer a service?",
+              "value": "",
+              "options": [{ "key": "yes", "value": "YES" },
+              { "key": "no", "value": "NO" }],
+              "readonly": false,
+              "type": "radio",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "input-field"
+              },
+              "dependency": []
+            },
+            {
+              "name": "personaldata",
+              "key": "personaldata",
+              "label": "Is there personal data collected from third parties and is that data being used to decide whether to allow or deny accesss to a service such as for instance ApplePay or to make an employment decision, e.g. use of hireRight for conductiong background checks?",
+              "value": "",
+              "options": [{ "key": "yes", "value": "YES" },
+              { "key": "no", "value": "NO" }],
+              "readonly": false,
+              "type": "radio",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "input-field"
+              },
+              "dependency": []
+            },
+            {
+              "name": "cctv",
+              "key": "cctv",
+              "label": "Is there large scale and systematic monitoring of publicly accessible aread, e.g. CCTV?",
+              "value": "",
+              "options": [{ "key": "yes", "value": "YES" },
+              { "key": "no", "value": "NO" }],
+              "readonly": false,
+              "type": "radio",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "input-field"
+              },
+              "dependency": []
+            },
+            {
+              "name": "empmonitoring",
+              "key": "empmonitoring",
+              "label": "Is any data collection which would allow for employee monitoring or tracking?",
+              "value": "",
+              "options": [{ "key": "yes", "value": "YES" },
+              { "key": "no", "value": "NO" }],
+              "readonly": false,
+              "type": "radio",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "input-field"
+              },
+              "dependency": []
+            },
+            {
+              "name": "disclosuredata",
+              "key": "disclosuredata",
+              "label": "Is there disclosure of data to third parties who wouldn't have access to this data otherwise?",
+              "value": "",
+              "options": [{ "key": "yes", "value": "YES" },
+              { "key": "no", "value": "NO" }],
+              "readonly": false,
+              "type": "radio",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "input-field"
+              },
+              "dependency": []
+            },
+            {
+              "name": "transferdata",
+              "key": "transferdata",
+              "label": "Is there a trasfer and collection of personal data from the EU?",
+              "value": "",
+              "options": [{ "key": "yes", "value": "YES" },
+              { "key": "no", "value": "NO" }],
+              "readonly": false,
+              "type": "radio",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "input-field"
+              },
+              "dependency": []
+            },
+            {
+              "name": "projoverview",
+              "key": "projoverview",
+              "label": "Based on the questionnaire not all of the PIA sections may be required. Please provide a detailed explanation as to PIA exemption below.",
+              "value": "",
+              "readonly": false,
+              "type": "textarea",
+              "order": "3",
+              "validations": [],
+              "layout": {
+                "colspan": 20,
+                "rowspan": 20,
+                "class": "form-control"
+              }
+            },
+            {
+              "name": "addcomment",
+              "key": "addcomment",
+              "type": "button",
+              "label" : "Add Comment",
+              "validations": [],
+              "layout": {
+                "class": "control-label"
+              },
+              "route":"addcomment",
+              "action" : "addcomment()",
+              "dependency": []
+          }
+          ]
+        }
+      ]
+      
+    },
+    {
+      "pageId": 3,
+      "pageName": "organizationtype",
+      "layout": {
+        "colspan": 20,
+        "rowspan": 20,
+        "class": "container"
+      },
+      "navigation":{
+        "nextLink" :"organizationType",
+        "previousLink" :"welcome"
+      },
+      "sections": [
+        {
+          "name": "section1",
+          "key": "1",
+          "order": "1",
+          "readonly": false,
+          "type": "division",
+          "fields": [
+            {
+              "name": "inforeviewlabel",
+              "key": "inforeviewlabel",
+              "label": "<b>PII Information Review</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Section Complete</b><img src='../../../assets/images/checked-image.png'>",
+              "readonly": false,
+              "type": "paragraph",
+              "order": "1",
+              "validations": [],
+              "layout": {
+                "class": "inforeviewlabel-heading"
+              },
+              "dependency": []
+            },
+            {
+              "name": "seccomplete",
+              "key": "seccomplete",
+              "label": "What person types are collected ?",
+              "readonly": false,
+              "type": "paragraph",
+              "order": "1",
+              "validations": [],
+              "layout": {
+                "class": "seccomplete-heading"
+              },
+              "dependency": []
+            }
+          ]
+        }
+      ]
+      
+    }
+  ]
+}

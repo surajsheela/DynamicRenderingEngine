@@ -1,0 +1,29 @@
+<div class="container organization">
+  <div id="main">
+    <div id="main_wrap">
+      <div id="content">
+        <div class="progress_bar null">
+          <img class="mask" src="../../../assets/images/progressbar_mask.png" alt="Progress" height="12" width="820">
+          <span class="progress step1"></span>
+        </div>
+        <ul class="horizontal steps">
+          <li class="step_organizationinfo" style="list-style: none">Organization Information</li>
+          <li class="step_contactinfo" style="list-style: none">Contact Information</li>
+          <li class="step_agreement" style="list-style: none">Validation</li>
+          <li class="step_agreementconfirm" style="list-style: none">Agreement</li>
+          <li class="step_thankyou" style="list-style: none">Thank You</li>
+        </ul>
+        <form (ngSubmit)="onSubmit()" [formGroup]="form">
+          <section *ngFor="let section of sections" class="section-group">
+            <div *ngFor="let control of section.fields" class="form-group">
+              <dynamic-control [input]="control" [form]="form">
+              </dynamic-control>
+            </div>
+          </section>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
